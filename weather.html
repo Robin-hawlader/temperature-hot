@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .background {
+            background-image: url(images/bg-image.jpg);
+        }
+
+        .width-property {
+            width: 525px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <section>
+        <div class="input-group mb-3 width-property mx-auto my-5">
+            <input id="input-field" type="text" class="form-control" placeholder="Enter a location for Weather..."
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchWeather()" class="btn  bg-danger text-light" type="button"
+                id="button-addon2">Search</button>
+        </div>
+        <div class="text-center text-light my-5">
+            <img id="weather-icon" src="images/02d.png" alt="">
+            <h1 id="name-change">Dhaka</h1>
+            <h3><span id="update-temp">28</span>&#8451;</h3>
+            <h4 id="cloud">Cloud</h4>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJnt99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
