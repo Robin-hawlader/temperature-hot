@@ -1,8 +1,18 @@
-const inputField = document.getElementById('input-field');
 const updatetemp = document.getElementById('update-temp');
 const updateName = document.getElementById('name-change');
 const cloud = document.getElementById('cloud');
-const weatherImg = document.getElementById('weather-img');
+
+
+const searchButton = document.getElementById("button-addon2");
+const inputField = document.getElementById('input-field');
+
+inputField.addEventListener("keypress", function (event) {
+    // event.preventDefault();
+    if (event.key == "Enter") {
+        searchButton.click();
+    }
+
+});
 
 
 const searchWeather = () => {
